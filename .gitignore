@@ -9,3 +9,8 @@
 
 # Ignore Assembly Info files (optional, if auto-generated)
 **/AssemblyInfo.cs
+
+
+# Ignore appsettings.json files
+InventoryERP.API/appsettings.json
+appsettings*.json
