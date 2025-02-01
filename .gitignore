@@ -1,0 +1,11 @@
+# Ignore Visual Studio files
+.vs/
+*.suo
+
+# Ignore Debug folders and cache files
+**/obj/
+**/bin/
+**/*.cache
+
+# Ignore Assembly Info files (optional, if auto-generated)
+**/AssemblyInfo.cs
