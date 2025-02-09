@@ -6,6 +6,16 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()   // Allow requests from any origin
+              .AllowAnyHeader()   // Allow all headers
+              .AllowAnyMethod();  // Allow all HTTP methods (GET, POST, etc.)
+    });
+});
+
 // Add services to the container.
 builder.Services.AddApplicationIdentity(builder.Configuration);
 builder.Services.AddControllers();
@@ -63,6 +73,9 @@ app.UseSwaggerUI(options =>
 {
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
 });
+
+app.UseCors("AllowAll");
+
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
