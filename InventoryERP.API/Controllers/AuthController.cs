@@ -11,7 +11,7 @@ namespace InventoryERP.API.Controllers
     [AllowAnonymous]
     public class AuthController : BaseController
     {
-        [HttpGet]
+        [HttpPost]
         public async Task<ActionResult> RefreshToken([FromQuery] AuthQuery query)
         {
             return Ok(await Mediator.Send(query));

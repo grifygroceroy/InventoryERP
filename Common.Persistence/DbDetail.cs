@@ -28,10 +28,11 @@ namespace Common.Persistence
         {
             get
             {
+                //return $"Data Source=wish.grabweb.in,5422;Initial Catalog=InventoryERP; Integrated Security=true";
                 //Server = "database-1.cbs4s6s0a6jq.us-east-1.rds.amazonaws.com"; DatabaseName = "POS"; UserName = "admin"; UserPassword = "0YogAhn73lDVbFUozhSJ";
-                //return $"Data Source=database-1.cbs4s6s0a6jq.us-east-1.rds.amazonaws.com;Initial Catalog=POS;User ID=admin;Password=0YogAhn73lDVbFUozhSJ; Integrated Security=true";
-               return $"Data Source=DESKTOP-GBTCR3D\\SQLEXPRESS;Initial Catalog=InventoryERP; Integrated Security=true";
-             // return $"Server={Server};Initial Catalog={DatabaseName};User ID={UserName};Password={UserPassword};Max Pool Size={ConnectionPoolSize}";
+                return $"Data Source=wish.grabweb.in,5422;Initial Catalog=InventoryERP;User ID=InventoryERP;Password=R33ZRU6?hGfre7#S";
+                //return $"Data Source=DESKTOP-GBTCR3D\\SQLEXPRESS;Initial Catalog=InventoryERP; Integrated Security=true";
+                // return $"Server={Server};Initial Catalog={DatabaseName};User ID={UserName};Password={UserPassword};Max Pool Size={ConnectionPoolSize}";
             }
         }
     }
